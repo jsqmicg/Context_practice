@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import AlbumsContext from "../context/AlbumsContext.js";
 import Album from "./Album.js";
-import Albums from "./mock/Albums.js";
 
-const AlbumsList = () => {
+const AlbumsList = ({ children }) => {
+  const { Albums } = useContext(AlbumsContext);
   return (
     <div className="container">
       <div className="row">

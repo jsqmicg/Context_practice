@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function Album({ album }) {
   const [favorite, setFavorite] = useState(false);
   const handleFavorite = () => {
-    setFavorite(true);
+    setFavorite(!favorite);
   };
   return (
     <div className="card">
