@@ -1,11 +1,11 @@
-import MoviesList from "./components/MoviesList";
 import NavBar from "./components/NavBar";
+import AlbumsList from "./components/AlbumsList.js";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <MoviesList />
+      <AlbumsList />
     </div>
   );
 }
